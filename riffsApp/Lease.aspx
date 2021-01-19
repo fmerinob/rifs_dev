@@ -1,27 +1,36 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lease.aspx.cs" Inherits="riffsApp.Lease" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Ofrece tu propio espacio en renta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Log in de la página</title>
     <link rel="stylesheet" href="ssHome.css" />
 </head>
 <body>
-    <form id="lease" runat="server">
+        <form id="form1" runat="server">
         <header class="head">
-            <div class="logo">Logo</div>
+            <a href="Rentar.aspx"><img class="logo" src="sources\logo1.svg" alt="Home"/></a>
             <nav class="navegador">
-                <a href="Home.aspx">Home</a>
-                <a href="Rentar.aspx">Rentar</a>
-                <a href="LogIn.aspx">Log In</a>
-                <a href="Contacto.aspx">Contacto</a>
+                <a href="Rentar.aspx">Home</a>
+                <a href="Favs.aspx">Mis Favoritos</a>
+                <a href="Perfil.aspx"><img class="carita" src="sources\carita.svg" alt="Mi Cuenta"/>Mi Cuenta</a>
+                <a href="Home.aspx">Sign Out</a>
             </nav>
-        </header>
-        <div class="fondo wrapper">
-       
+        </header>  
+    <div class="fondo wrapper">
+      <section class="section">
+        <!-- Title -->
+        <div class="misProps">
+            <asp:ImageButton ID="btAgregar" runat="server" src="sources\boton.png" OnClick="agregar" Height="50px"/>
+          <h4 align="center" class="title is-2 ">Tus propiedades en renta</h4>&nbsp;
+            <div class ="props">
+                <asp:ImageButton ID="ib1" runat="server" src="sources/propiedades/miProp1.png" OnClick="ib1_Click" Height="300px" />
+                <asp:ImageButton ID="ib2" runat="server" src="sources/propiedades/miProp2.png" OnClick="ib1_Click" Height="300px" />
+            </div>
         </div>
-    </form>
+       </section>
+    </div>
+        </form>
 </body>
 </html>

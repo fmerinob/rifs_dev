@@ -5,21 +5,33 @@
 
 body {
     background: #f2f2f2;
+    font-family: Calibri;
+    background-image: url("sources/fondo.jpg");
+    background-repeat: repeat;
 }
 
 header {
     width: 100%;
     overflow: hidden;
     background: #7ed3b2;
-    margin: 20px;
     line-height: 100px;
 }
 
 .wrapper {
-    width: 90%;
+    width: 101%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+    height: 2793px;
+    text-align: center;
+}
+
+h4 {
+    color: #027f6a;
+    font-size:22pt;
+    background-color: white;
+    border-radius:20px;
+    margin-top:25px;
 }
 
 
@@ -29,8 +41,8 @@ header .logo {
 }
 
 header .navegador {
-    margin-right: 40px;
     float: right;
+    margin-right:20px;
 }
 
 header a {
@@ -47,4 +59,143 @@ header a {
 header nav a:hover {
     background: #ef6c57;
     border-radius: 50px;
+    margin: 4px;
+}
+
+.cuadro{
+    padding: 10px;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    text-align: center;
+}
+
+.cuadro * {
+    margin: 8px;
+}
+
+.wrapper input {
+    padding-left: 6px;
+}
+
+
+.log .child{
+    text-align:right;
+}
+
+.logo{
+    height:50px;
+    margin-top: 30px;
+}
+
+.carita{
+    height: 25PX;
+    margin: 4px;
+}
+
+
+.props #prop{
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+    max-height: 300px;
+    margin-top:30px;
+}
+
+#tarjeta * {
+    height:100px;
+    margin: 20px; 
+}
+.props {
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align:center;
+}
+
+.props > div {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    color:#027f6a;
+}
+
+div > p{
+    text-align:justify;
+    margin-top:7px;
+}
+
+#ib1 {
+    height:600px;
+    
+}
+
+.columns {
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.field {
+    text-align:left;
+    margin-left:30px;
+}
+
+.agregar{
+    margin:20px;
+}
+
+#btAgregar{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.props * {
+    margin: 20px;
+    background-color: transparent;
+    text-align:center;
+}
+
+.gatos{
+    border-radius: 30px;
+}
+
+.tbx{
+    margin: 0px;
+}
+.lbl{
+    margin-top:-4px;
+    font-size:14pt;
+}
+
+.search{
+    text-align:left;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.search .entrada{
+    padding-right:80px;
+}
+
+.btBuscar{
+    text-align:right;
+    margin: 0px;
+    height: 68px;
+}
+
+.combo{
+    text-align:center;
+    background-color:transparent;
+}
+
+.estrella {
+    background-color: transparent;
 }

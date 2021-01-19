@@ -1,27 +1,56 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="riffsApp.LogIn" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Log In de RIFS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Log in de la página</title>
     <link rel="stylesheet" href="ssHome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form id="login" runat="server">
         <header class="head">
-            <div class="logo">Logo</div>
+            <a href="Home.aspx"><img class="logo" src="sources\logo1.svg" alt="Home"/></a>
             <nav class="navegador">
                 <a href="Home.aspx">Home</a>
-                <a href="Rentar.aspx">Rentar</a>
-                <a href="Lease.aspx">Ofrece un espacio</a>
-                <a href="Contacto.aspx">Contacto</a>
             </nav>
         </header>
-        <div class="wrapper">
-        
+    <div class="fondo wrapper">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <h3 class="title has-text-grey has-text-centered">Log-in</h3>
+                <div class="field">
+                    <div class="control has-icons-left has-icons-">
+                        <input class="input" type="email" placeholder="Usuario" autofocus="">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input " type="password" placeholder="Contraseña">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field is-centered">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Recuérdame
+                    </label>
+                </div>
+                <a class="button is-primary is-rounded is-flex is-horizontal-centered" onclick="location.href='Rentar.aspx'">Entrar</a> &nbsp;
+                <p class=" has-text-centered "> 
+                    <a href="CrearCuenta.aspx">CREAR CUENTA</a> 
+                </p>
+          </div> 
         </div>
-    </form>
+     </div>  
+    
 </body>
 </html>
