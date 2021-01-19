@@ -24,3 +24,5 @@ se abrirá una ventana de "sitió en construcción".
 -No hay manera de dar de baja de favoritos.
 -Si uno intenta crear una nueva cuenta, se hace un login automatico, sin embargo en la pagina "mi perfil" no se verán los datos
 del usuario si no los del usuario default (lupe).
+
+Proyecto realizado en equipo en Mayo 2019 para la materia Análisis y Diseño de Sistemas de Información.
